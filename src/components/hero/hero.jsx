@@ -11,6 +11,9 @@ function Hero() {
                     <h1>Stacey-Lee Pietersen</h1>
                     <p>Software Developer</p>
                 </div>
+                <div className="id">
+                    <img src="" alt="" />
+                </div>
             </div>
         </>
     )

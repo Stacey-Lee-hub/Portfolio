@@ -23,7 +23,10 @@ function About(){
                     </div>
                 </div>
                 <div className="right">
-                    <h2>let me see this please</h2>
+                    <h2>About Me</h2>
+                    <p>blurb........................................................................................</p>
+                    <br />
+                    <button><a href="">CV</a></button>
                 </div>
             </div>
         </>

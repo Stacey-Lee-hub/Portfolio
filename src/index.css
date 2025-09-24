@@ -34,3 +34,8 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading);
     color: var(--heading-blue);
 }
+
+p {
+    font-family: var(--body);
+    color: var(--text-gray);
+}
