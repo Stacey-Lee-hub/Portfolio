@@ -4,8 +4,14 @@ import Nav from '../nav/nav.jsx'
 function Hero() {
     return (
         <>
-            <Nav/>
-            <h1>Stacey's Portfolio</h1>
+            <div className="hero">
+                <Nav/>
+                <br /> <br />
+                <div className="content">
+                    <h1>Stacey-Lee Pietersen</h1>
+                    <p>Software Developer</p>
+                </div>
+            </div>
         </>
     )
 }

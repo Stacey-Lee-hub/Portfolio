@@ -1,0 +1,63 @@
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(195deg, var(--blue) 0%, var(--light-blue) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:flex-start;
+    position: relative;
+}
+
+.hero::before, .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-repeat: repeat;
+    pointer-events: none;
+}
+
+.hero::before {
+    background-image: url('data:image/svg+xml;utf8,\ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">\ <circle cx="20" cy="80" r="0.8" fill="%23ffffff" opacity="0.8"/>\ <circle cx="60" cy="50" r="1.0" fill="%23ffffff" opacity="0.6"/>\ <polygon points="40,20 41,22 43,22 41.5,23.5 42,25 40,24 38,25 38.5,23.5 37,22 39,22" fill="%23fff3cc" opacity="0.7"/>\ </svg>');
+    animation: star-rise-fore 60s linear infinite;
+    opacity: 0.5;
+    background-size: 280px 280px;
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to top, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
+}
+
+.hero::after {
+    background-image: url('data:image/svg+xml;utf8,\ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">\ <circle cx="15" cy="70" r="0.6" fill="%23ffffff" opacity="0.4"/>\ <circle cx="80" cy="40" r="0.7" fill="%23fff3cc" opacity="0.35"/>\ </svg>');
+    animation: star-rise-back 120s linear infinite;
+    background-size: 400px 400px;
+    opacity: 0.65;
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to top, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 100%);
+}
+
+h1 {
+    color: var(--white);
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+p {
+    color: var(--yellow);
+    font-family: var(--heading);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.content {
+    margin: 10% 0 0 10%;
+}
+
+/* KEYFRAMES */
+@keyframes star-rise-fore {
+    from {background-position: 0 100%; opacity: 0.5; transform: translateZ(0);}
+    to {background-position: 0 0%; opacity: 0.2; transform: translateZ(0);}
+}
+
+@keyframes star-rise-back {
+    from {background-position: 0 100%; opacity: 0.6; transform: translateZ(0);}
+    to {background-position: 0 0%; opacity: 0.1; transform: translateZ(0);}
+}
