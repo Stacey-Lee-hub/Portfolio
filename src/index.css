@@ -28,7 +28,6 @@ body {
     font-family: var(--body);
     color: var(--text-gray);
     background-color: var(--cream);
-    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {

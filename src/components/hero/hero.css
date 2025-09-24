@@ -1,6 +1,6 @@
 .hero {
     min-height: 100vh;
-    background: linear-gradient(195deg, var(--blue) 0%, var(--light-blue) 100%);
+    background: linear-gradient(165deg, var(--blue) 0%, var(--light-blue) 80%);
     display: flex;
     flex-direction: column;
     align-items: start;
