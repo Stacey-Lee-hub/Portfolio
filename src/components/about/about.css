@@ -77,6 +77,18 @@
 .right h2 {
     font-size: 4.5rem;
     font-weight: 600;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.right h2::after{
+    content: "";
+    position: absolute;
+    left: 20%;
+    bottom: -0.5rem;
+    transform: translateX(-50);
+    width: 15rem;
+    height: .5rem;
+    background-color: var(--yellow);
 }
 .right p {
     font-size: 2rem;
