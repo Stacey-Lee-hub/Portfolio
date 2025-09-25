@@ -5,6 +5,7 @@ import pic3 from '../../assets/profile pic/pic_3.png'
 import star1 from '../../assets/stars/star1.svg'
 import star2 from '../../assets/stars/star2.svg'
 import star3 from '../../assets/stars/star3.svg'
+import myCV from '../../assets/docs/CV.pdf'
 
 function About(){
     return (
@@ -24,9 +25,9 @@ function About(){
                 </div>
                 <div className="right">
                     <h2>About Me</h2>
-                    <p>blurb........................................................................................</p>
+                    <p>I'm a young and driven software developer, with a passion for building practical, user-friendly web solutions. I see myself as a fullstack developer, having worked with Javascript, React, Vue, Node.js and SQL.</p>
                     <br />
-                    <button><a href="">CV</a></button>
+                    <button><a href={myCV} target="_blank" rel="nooopener noreferrer" >CV</a></button>
                 </div>
             </div>
         </>

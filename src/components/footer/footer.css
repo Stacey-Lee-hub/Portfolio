@@ -1,0 +1,29 @@
+.footer {
+    height: 40vh;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+h4 {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.foot-sum p {
+    font-size: 1.3rem;
+}
+
+.navi-grid {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 40rem;
+}
+
+.navi-grid li {
+    font-size: 1.3rem;
+}
+
