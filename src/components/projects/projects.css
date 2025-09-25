@@ -55,11 +55,42 @@
     border: var(--blue) 0.5rem solid;
 }
 
+/* FRONT */
 .proj-front {
     background-color: var(--white);
     width: 100%;
+    justify-content: space-between;
 }
 
+.proj-front .name {
+    font-size: 1.8rem;
+}
+
+.proj-front .type {
+    color: var(--white);
+    font-weight: 500;
+    font-style: var(--body);
+    font-size: 1.5rem;
+}
+.type-cont {
+    background-color: var(--blue);
+    height: 2rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+    right: 0;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+
+.proj-front .summary {
+    font-size: 1.3rem;
+}
+
+/* BACK */
 .proj-back {
     background-color: var(--yellow);
     transform: rotateY(180deg);
@@ -74,16 +105,14 @@
     position: absolute;
     bottom: 3%;
     right: 2%;
-    padding: .8rem 5rem;
+    padding: .1rem 2rem;
     border-radius: 10rem;
     border: transparent .3rem solid;
     background-color: var(--blue);
 }
 
 .proj-back button:hover {
-    border: var(--blue) .3rem solid;
-    background-color: var(--yellow);
-    color: var(--blue);
+    transform: translateY(2px);
 }
 
 .proj-back a {
@@ -91,8 +120,6 @@
     color: var(--white);
     font-size: 1.6rem;
 }
-
-.proj-back a:hover {color: var(--blue);}
 
 /* TECH GRID */
 .tech-grid {

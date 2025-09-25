@@ -6,7 +6,7 @@ function Projects() {
                 id:1,
                 name: 'ChauffeurLux Ecommerce Project',
                 type: 'FullStack',
-                summary: 'summary infor here',
+                summary: 'Built a digital-first eCommerce site for “ChaffeurLux” with seamless booking, secure payments, and a tailored vehicle catalogue for luxury tourism, corporate and special events market.',
                 tech: ['React.js', 'JS', 'Node.js', 'HTML', 'MySQL', 'CSS'],
                 github: 'https://github.com/Stacey-Lee-hub/EcomCarRental'
             },
@@ -14,7 +14,7 @@ function Projects() {
                 id:2,
                 name: 'HR Management System',
                 type: 'FullStack',
-                summary: 'summary infor here',
+                summary: 'Designed and implemented a full-stack HR system to manage employee salaries, reviews, and departmental data in a structured and efficient workflow.',
                 tech: ['Vue.js', 'JS', 'Node.js', 'HTML', 'MySQL', 'CSS'],
                 github: 'https://github.com/Stacey-Lee-hub/Hr_management_project'
             },
@@ -39,7 +39,9 @@ function Projects() {
                         <div className="proj-inner">
                             <div className="proj-front">
                                 <h3 className='name'>{proj.name}</h3>
-                                <div className="type">{proj.type}</div>
+                                <div className="type-cont">
+                                    <div className="type">{proj.type}</div>
+                                </div>
                                 <div className="summary">{proj.summary}</div>
                             </div>
 
