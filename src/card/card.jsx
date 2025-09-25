@@ -1,40 +1,19 @@
 import './card.css'
+import bg from '../assets/skill icons/blue on top.svg'
 
-function Card() {
-    return(
+function SCard({icon}) {
+    return (
         <>
-            <div className="card-container">
-                <div className="card">
-                    <div className="left">
-                        {/* QR CODE */}
-                        <img src="" alt="" />
-                    </div>
-                    <div className="right">
-                        <h1>Stacey-Lee Pietersen</h1>
-                        <div className="info">
-                            {/* possibly grid */}
-                            <div className="grid-left">
-                                <div className="small">Date of Birth</div>
-                                <div className="grid-info">2 JUL 2003</div>
-                                <div className="small">Pronouns</div>
-                                {/* dont stress. youre gonna die soon be unapologetic */}
-                                <div className="grid-info">They/Them</div>
-                            </div>
-                            <div className="grid-right">
-                                <div className="small">Date of Birth</div>
-                                <div className="grid-info">2 JUL 2003</div>
-                                <div className="small">Pronouns</div>
-                                {/* dont stress. youre gonna die soon be unapologetic */}
-                                <div className="grid-info">They/Them</div>
-                                {/* for reference */}
-                            </div>
-                        </div>
+            <div className="card-cont">
+                <img src={bg} className='bg' alt="" />
+                <div className="scard">
+                    <div className="circle">
+                        <img src={icon} style={{width: '6rem'}} alt="" />
                     </div>
                 </div>
-                {/* make footer that underlines the entire card */}
             </div>
         </>
     )
 }
 
-export default Card
+export default SCard;
