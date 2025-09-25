@@ -78,7 +78,7 @@
     font-size: 4.5rem;
     font-weight: 600;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 .right h2::after{
     content: "";
@@ -103,6 +103,7 @@
     border: transparent;
     border-radius: 1.5rem;
     padding: 0rem 8rem;
+    margin-top: 5rem;
 }
 .right button a {
     text-decoration: none;
