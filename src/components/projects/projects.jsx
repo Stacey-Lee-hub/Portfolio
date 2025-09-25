@@ -8,14 +8,31 @@ function Projects() {
                 type: 'FullStack',
                 summary: 'summary infor here',
                 tech: ['React.js', 'JS', 'Node.js', 'HTML', 'MySQL', 'CSS'],
-                github: 'link'
+                github: 'https://github.com/Stacey-Lee-hub/EcomCarRental'
+            },
+            {
+                id:2,
+                name: 'HR Management System',
+                type: 'FullStack',
+                summary: 'summary infor here',
+                tech: ['Vue.js', 'JS', 'Node.js', 'HTML', 'MySQL', 'CSS'],
+                github: 'https://github.com/Stacey-Lee-hub/Hr_management_project'
+            },
+            {
+                id:3,
+                name: 'Portfolio',
+                type: 'Frontend',
+                summary: 'summary infor here',
+                tech: ['React.js', 'JS', 'HTML', 'CSS'],
+                github: 'https://github.com/Stacey-Lee-hub/Portfolio'
             }
         ]
-        
+
     return(
         <>
         <div className="proj-cont">
             <h2>Projects</h2>
+            <br /><br />
             <div className="proj-grid">
                 {projects.map((proj, index) => (
                     <div className="proj-card" key={index}>
@@ -34,7 +51,7 @@ function Projects() {
                                     ))}
                                 </div>
                                 <div className="github">
-                                    <button><a href={proj.github} target="_blank" rel="noreferrer">github-icon</a></button>
+                                    <button><a href={proj.github} target="_blank" rel="noreferrer">github</a></button>
                                 </div>
                             </div>
                         </div>

@@ -1,0 +1,108 @@
+.proj-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.proj-cont h2 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.proj-cont h2::after{
+    content: "";
+    position: absolute;
+    left: 20%;
+    bottom: -0.5rem;
+    transform: translateX(-50);
+    width: 15rem;
+    height: .5rem;
+    background-color: var(--yellow);
+}
+
+/* PROJECT GRID */
+.proj-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20rem;
+    /* spacebetween */
+}
+
+.proj-inner {
+    position: relative;
+    width: 35rem;
+    height: 30rem;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.proj-card:hover .proj-inner {
+    transform: rotateY(180deg);
+}
+
+.proj-front, .proj-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: var(--blue) 0.5rem solid;
+}
+
+.proj-front {
+    background-color: var(--white);
+    width: 100%;
+}
+
+.proj-back {
+    background-color: var(--yellow);
+    transform: rotateY(180deg);
+}
+
+.proj-back h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.proj-back button {
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+    padding: .8rem 5rem;
+    border-radius: 10rem;
+    border: transparent .3rem solid;
+    background-color: var(--blue);
+}
+
+.proj-back button:hover {
+    border: var(--blue) .3rem solid;
+    background-color: var(--yellow);
+    color: var(--blue);
+}
+
+.proj-back a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.6rem;
+}
+
+.proj-back a:hover {color: var(--blue);}
+
+/* TECH GRID */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.tech-grid p {
+    color: var(--blue);
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
