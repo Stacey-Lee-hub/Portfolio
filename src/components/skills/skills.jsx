@@ -42,11 +42,11 @@ function Skills() {
                 // Repel distance
                 const dist = Math.sqrt(dx * dx + dy * dy);
                 if (dist < 0.0001) dist = 0.0001;
-                const maxDist = 130;
+                const maxDist = 120;
 
                 if(dist < maxDist) {
                     const force = (maxDist - dist) / maxDist;
-                    const offset = force * 50;
+                    const offset = force * 40;
                     const offsetX = (dx / dist) * offset;
                     const offsetY = (dy / dist) * offset;
 
