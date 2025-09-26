@@ -74,7 +74,7 @@ function Hero() {
                 <div className="content">
                     <h1>My Portfolio</h1>
                     <p>Software Developer</p>
-                    <p>akhsjfh</p>
+                    {/* <p>akhsjfh</p> */}
                 </div>
                 <div className="id" ref={cardRef}>
                     <div className="left-col">
