@@ -9,7 +9,7 @@ function Footer() {
             <div className="foot-cont">
                 <div className="foot-sum">
                     <h4>Stacey-Lee Pietersen</h4>
-                    <p>blurb..............</p>
+                    <p>I'm a fullstack software developer with a structure and analytical approach. i thrive in collaborative environments and enjoy making practical, user-friendly we solutions.</p>
                 </div>
                 <div className="navi">
                     <h4>Navigation</h4>
