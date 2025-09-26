@@ -23,7 +23,7 @@ function Projects() {
                 id:3,
                 name: 'Portfolio',
                 type: 'Frontend',
-                summary: 'summary infor here',
+                summary: 'A personal portfolio website featuring a 3D-inspired hero section, an about page, a showcase of tools and technologies I use, and a curated selection of my projects.',
                 tech: ['React.js', 'JS', 'HTML', 'CSS'],
                 github: 'https://github.com/Stacey-Lee-hub/Portfolio'
             }
