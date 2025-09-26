@@ -32,4 +32,6 @@
     grid-template-columns: repeat(6, 1fr);
     width: 80%;
     padding: 1rem;
+    position: relative;
+    transition: transform 0.15s ease-out;
 }

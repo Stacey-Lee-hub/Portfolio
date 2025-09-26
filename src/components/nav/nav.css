@@ -6,7 +6,11 @@ nav {
 ul {
     display: flex;
     flex-direction: row;
-    gap: 8rem;
+    gap: 6rem;
+}
+
+nav ul li {
+    list-style: none;
 }
 
 nav ul li a{
