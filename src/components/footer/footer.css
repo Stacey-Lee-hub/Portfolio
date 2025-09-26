@@ -33,3 +33,7 @@ h4 {
     text-decoration: none;
 }
 
+.icons {
+    display: flex;
+    gap: 2rem;
+}
