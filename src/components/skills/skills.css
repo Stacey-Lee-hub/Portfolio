@@ -35,3 +35,10 @@
     position: relative;
     transition: transform 0.15s ease-out;
 }
+
+/* RESPONSIVENESS */
+@media (max-width: 480px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
