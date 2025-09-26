@@ -9,10 +9,11 @@ ul {
     gap: 8rem;
 }
 
-li {
+nav ul li a{
     list-style: none;
     font-family: var(--heading);
     font-weight: 200;
     font-size: 2rem;
     color: var(--yellow);
+    text-decoration: none;
 }

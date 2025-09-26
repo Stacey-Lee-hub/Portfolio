@@ -25,5 +25,11 @@ h4 {
 
 .navi-grid li {
     font-size: 1.3rem;
+    list-style: none;
+}
+
+.navi-grid li a {
+    color: var(--yellow);
+    text-decoration: none;
 }
 

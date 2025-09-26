@@ -1,4 +1,5 @@
 import './about.css'
+import { HashLink } from "react-router-hash-link";
 import pic1 from '../../assets/profile pic/pic_1.png'
 import pic2 from '../../assets/profile pic/pic_2.png'
 import pic3 from '../../assets/profile pic/pic_3.png'
@@ -10,7 +11,7 @@ import myCV from '../../assets/docs/CV.pdf'
 function About(){
     return (
         <>
-            <div className="container" id="#about">
+            <div className="container" id="about">
                 <div className="left">
                     <img className='star1' src={star1} alt="" />
                     <img className='star2' src={star2} alt="" />
@@ -27,7 +28,7 @@ function About(){
                     <h2>About Me</h2>
                     <p>I'm a young and driven software developer, with a passion for building practical, user-friendly web solutions. I see myself as a fullstack developer, having worked with Javascript, React, Vue, Node.js and SQL.</p>
                     <br />
-                    <button><a href={myCV} target="_blank" rel="nooopener noreferrer" >CV</a></button>
+                    <button><a href={myCV} target="_blank" rel="noopener noreferrer" >CV</a></button>
                 </div>
             </div>
         </>

@@ -1,4 +1,5 @@
 import './hero.css'
+import { HashLink } from "react-router-hash-link";
 import Nav from '../nav/nav.jsx'
 import { useEffect, useRef } from 'react';
 import pic from '../../assets/pic_4.jpg';
@@ -67,7 +68,7 @@ function Hero() {
 
     return (
         <>
-            <div className="hero" id="#home">
+            <div className="hero" id="home">
                 <Nav/>
                 <br /> <br />
                 <div className="content">

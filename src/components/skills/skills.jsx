@@ -1,4 +1,5 @@
 import './skills.css'
+import { HashLink } from "react-router-hash-link";
 import Card from '../../card/card.jsx'
 import js from '../../assets/skill icons/javascript.png'
 import html from '../../assets/skill icons/html.png'
@@ -21,7 +22,7 @@ function Skills() {
     return (
         <>
             {/* cards disperse but on double click they come back together */}
-            <div className="skill-cont" id="#skills">
+            <div className="skill-cont" id="skills">
                 <h2>Tools + Technologies</h2>
                 <div className="cards">
                     <Card icon={js}/>
