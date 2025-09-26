@@ -67,7 +67,7 @@ function Hero() {
 
     return (
         <>
-            <div className="hero">
+            <div className="hero" id="#home">
                 <Nav/>
                 <br /> <br />
                 <div className="content">

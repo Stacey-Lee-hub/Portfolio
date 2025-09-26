@@ -13,10 +13,10 @@ function Footer() {
                 <h4>Navigation</h4>
 
                 <ul className='navi-grid'>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Tool + Technologies</li>
-                    <li>Projects</li>
+                    <li><HashLink smooth to="/#home">Home</HashLink></li>
+                    <li><HashLink smooth to="/#about">About</HashLink></li>
+                    <li><HashLink smooth to="/#skills">Tools + Technologies</HashLink></li>
+                    <li><HashLink smooth to="/#projects">Projects</HashLink></li>
                 </ul>
             </div>
             <div className="links">

@@ -10,7 +10,7 @@ import myCV from '../../assets/docs/CV.pdf'
 function About(){
     return (
         <>
-            <div className="container">
+            <div className="container" id="#about">
                 <div className="left">
                     <img className='star1' src={star1} alt="" />
                     <img className='star2' src={star2} alt="" />

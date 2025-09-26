@@ -30,7 +30,7 @@ function Projects() {
 
     return(
         <>
-        <div className="proj-cont">
+        <div className="proj-cont" id="#projects">
             <h2>Projects</h2>
             <br /><br />
             <div className="proj-grid">

@@ -21,7 +21,7 @@ function Skills() {
     return (
         <>
             {/* cards disperse but on double click they come back together */}
-            <div className="skill-cont">
+            <div className="skill-cont" id="#skills">
                 <h2>Tools + Technologies</h2>
                 <div className="cards">
                     <Card icon={js}/>
