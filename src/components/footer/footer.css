@@ -16,7 +16,7 @@ h4 {
     font-weight: 400;
 }
 
-.foot-sum {
+.foot-sum, .navi, .links {
     width: 25rem;
 }
 
@@ -24,10 +24,6 @@ h4 {
     font-size: 1.3rem;
     font-weight: 400;
     font-family: var(--body);
-}
-
-.navi {
-    width: 9rem;
 }
 
 .navi-grid {
