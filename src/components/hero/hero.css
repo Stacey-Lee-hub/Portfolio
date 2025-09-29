@@ -153,7 +153,7 @@ p {
         position: relative;
         bottom: 0;
         margin: 4rem auto 4rem 4rem;
-        max-width: 420px;
+        max-width: 400px;
         height: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
