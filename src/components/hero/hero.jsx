@@ -14,6 +14,11 @@ function Hero() {
     useEffect(() => {
         const element = cardRef.current;
         if (!element) return;
+
+        // No 3d tilt on phones
+        const canHover = window.matchMedia && window.matchMedia('(hover: hover)').matches;
+        if (!canHover) return;
+
         let scheduled = false;
 
         const onMouseMove = (e) => {
@@ -78,10 +83,10 @@ function Hero() {
                 </div>
                 <div className="id" ref={cardRef}>
                     <div className="left-col">
-                        <img src={pic} alt="" />
+                        <img src={pic} alt="Stacey-Lee Portrait" />
                     </div>
                     <div className="right-col">
-                        <p>Stacey-Lee Pietersen</p>
+                        <p className='myname' >Stacey-Lee Pietersen</p>
                         <div className="info-grid">
                             <div className="info-left">
                                 <p className='head'>Profession</p>
