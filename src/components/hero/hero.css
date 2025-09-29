@@ -132,6 +132,7 @@ p {
     to {background-position: 0 0%; opacity: 0.1; transform: translateZ(0);}
 }
 
+/* RESPONSIVENESS */
 @media (max-width: 600px) {
     .content {
         margin: 3% 1.5rem 0 1.5rem;
@@ -197,4 +198,11 @@ p {
     .id-icons svg { width: 20px; height: 20px; }
 
     .line { height: 6%; }
+}
+
+@media (max-width: 400px) {
+    .id {
+        width: 360px;
+        margin: 2rem auto 2rem 2.5rem;
+    }
 }
