@@ -44,4 +44,7 @@
     .skill-cont h2 {
         font-size: 2.2rem;
     }
+    .skill-cont h2::after{
+        left: 20%;
+    }
 }
