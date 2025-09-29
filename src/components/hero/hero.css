@@ -151,9 +151,10 @@ p {
     }
 
     .id {
-        position: relative;
         bottom: 0;
-        margin: 4rem auto 4rem 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 4rem auto 4rem auto;
         max-width: 400px;
         height: auto;
         display: grid;
@@ -203,6 +204,6 @@ p {
 @media (max-width: 400px) {
     .id {
         width: 360px;
-        margin: 2rem auto 2rem 2.5rem;
+        margin: 2rem auto 2rem auto;
     }
 }
