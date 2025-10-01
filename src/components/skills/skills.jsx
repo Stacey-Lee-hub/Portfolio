@@ -40,7 +40,7 @@ function Skills() {
                 const dy = cardY - mouseY;
 
                 // Repel distance
-                const dist = Math.sqrt(dx * dx + dy * dy);
+                let dist = Math.sqrt(dx * dx + dy * dy);
                 if (dist < 0.0001) dist = 0.0001;
                 const maxDist = 120;
 

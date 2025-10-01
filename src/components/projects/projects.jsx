@@ -1,5 +1,6 @@
 import './projects.css'
 import { HashLink } from "react-router-hash-link";
+import FadeInSection from '../../animation/fadeInSection.jsx';
 
 function Projects() {
     const projects = [
@@ -31,7 +32,7 @@ function Projects() {
 
     return(
         <>
-        <div className="proj-cont" id="projects">
+        <FadeInSection className="proj-cont" id="projects">
             <h2>Projects</h2>
             <br /><br />
             <div className="proj-grid">
@@ -61,7 +62,7 @@ function Projects() {
                     </div>
                 ))}
             </div>
-        </div>
+        </FadeInSection>
         </>
     )
 }

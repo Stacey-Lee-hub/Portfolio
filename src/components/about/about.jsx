@@ -1,5 +1,6 @@
 import './about.css'
 import { HashLink } from "react-router-hash-link";
+import FadeInSection from '../../animation/fadeInSection.jsx';
 import pic1 from '../../assets/profile pic/pic_1.png'
 import pic2 from '../../assets/profile pic/pic_2.png'
 import pic3 from '../../assets/profile pic/pic_3.png'
@@ -24,12 +25,12 @@ function About(){
                         <img src={pic3} alt="pic_3" />
                     </div>
                 </div>
-                <div className="right">
+                <FadeInSection className="right">
                     <h2>About Me</h2>
                     <p>I'm a young and driven software developer, with a passion for building practical, user-friendly web solutions. I see myself as a fullstack developer, having worked with Javascript, React, Vue, Node.js and SQL.</p>
                     <br />
                     <button><a href={myCV} target="_blank" rel="noopener noreferrer" >CV</a></button>
-                </div>
+                </FadeInSection>
             </div>
         </>
     )

@@ -4,6 +4,11 @@
     align-items: center;
     justify-content: center;
     margin: 2rem 0 5rem 0;
+    opacity: 0;
+}
+
+.proj-cont.visible {
+    animation: fade-in 2s ease-out forwards;
 }
 
 .proj-cont h2 {
@@ -131,6 +136,18 @@
     font-weight: 600;
     font-size: 1.5rem;
     padding: 2rem;
+}
+
+/* KEYFRAMES */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* RESPONSIVENESS */
