@@ -27,7 +27,8 @@ function About(){
                 </div>
                 <FadeInSection className="right">
                     <h2>About Me</h2>
-                    <p>I'm a young and driven software developer, with a passion for building practical, user-friendly web solutions. I see myself as a fullstack developer, having worked with Javascript, React, Vue, Node.js and SQL.</p>
+                    {/* <p>I'm a young and driven software developer, with a passion for building practical, user-friendly web solutions. I see myself as a fullstack developer, having worked with Javascript, React, Vue, Node.js and SQL.</p> */}
+                    <p>I’m Stacey-Lee Pietersen, a driven software developer and graduate of the LCA Youth Coding Bootcamp in Cape Town. With a background in BSc Geoinformatics and an ICDL certification, I discovered my passion for IT and developed a structured, analytical approach to solving problems. I enjoy building solutions that are practical, user-friendly, and meaningful. <br /><br />I have hands-on experience with JavaScript, CSS, React, Node.js, and SQL. I thrive in collaborative environments, embrace challenges with persistence, and look forward to growing my skills while contributing to innovative teams.</p>
                     <br />
                     <button><a href={myCV} target="_blank" rel="noopener noreferrer" >CV</a></button>
                 </FadeInSection>

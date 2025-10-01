@@ -77,7 +77,7 @@ function Hero() {
                 <Nav/>
                 <br /> <br />
                 <div className="content">
-                    <h1>My Portfolio</h1>
+                    <h1>Hi, I'm Stacey-Lee</h1>
                     <p>Software Developer</p>
                     {/* <p>akhsjfh</p> */}
                 </div>
