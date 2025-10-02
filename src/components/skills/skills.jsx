@@ -11,12 +11,14 @@ import node from '../../assets/skill icons/nodejs.png'
 import express from '../../assets/skill icons/expressjs.png'
 import php from '../../assets/skill icons/php.webp'
 import python from '../../assets/skill icons/python.png'
+import csharp from '../../assets/skill icons/C_sharp.png'
 import wordpress from '../../assets/skill icons/wordpress.png'
 import mysql from '../../assets/skill icons/mysql.png'
 import oraclesql from '../../assets/skill icons/oraclesql.png'
 import oracleapex from '../../assets/skill icons/oracleapex.jpg'
 import figma from '../../assets/skill icons/figma.png'
 import git from '../../assets/skill icons/git.png'
+import github from '../../assets/skill icons/github.png'
 import { useEffect, useRef } from 'react';
 
 function Skills() {
@@ -85,12 +87,14 @@ function Skills() {
                     <div className="card"><Card icon={express}/></div>
                     <div className="card"><Card icon={php}/></div>
                     <div className="card"><Card icon={python}/></div>
+                    <div className="card"><Card icon={csharp}/></div>
                     <div className="card"><Card icon={wordpress}/></div>
                     <div className="card"><Card icon={mysql}/></div>
                     <div className="card"><Card icon={oraclesql}/></div>
                     <div className="card"><Card icon={oracleapex}/></div>
                     <div className="card"><Card icon={figma}/></div>
                     <div className="card"><Card icon={git}/></div>
+                    <div className="card"><Card icon={github}/></div>
                 </div>
             </div>
         </>

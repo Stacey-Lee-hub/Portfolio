@@ -71,6 +71,29 @@ p {
     width: 60rem;
 }
 
+/* BUTTON */
+.cta {
+    margin-top: 2rem;
+    border-radius: 20rem;
+    width: 15rem;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    padding: 1.6rem;
+}
+.cta:hover{
+    background-color: #ffebafd2;
+    animation: enlarge 0.3s forwards;
+}
+
+.vmw {
+    font-size: 1.3rem;
+    font-family: var(--body);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--blue);
+}
+
 /* ID */
 .id {
     position: absolute;
@@ -154,6 +177,11 @@ p {
 
 @keyframes blink {
     to {visibility: hidden;}
+}
+
+@keyframes enlarge {
+    from {scale: 1;}
+    to {scale: 1.06;}
 }
 
 /* RESPONSIVENESS */
