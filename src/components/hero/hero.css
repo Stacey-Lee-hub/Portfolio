@@ -3,8 +3,7 @@
     background: linear-gradient(165deg, var(--blue) 0%, var(--light-blue) 80%);
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content:flex-start;
+    /* justify-content:flex-start; */
     position: relative;
 }
 
@@ -186,11 +185,37 @@ p {
 
 /* RESPONSIVENESS */
 @media (max-width: 600px) {
+    .hero {
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+    }
     .content {
-        margin: 3% 1.5rem 0 1.5rem;
+        /* margin: 3% 1.5rem 0 1.5rem; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
         text-align: center;
+        flex-wrap: wrap;
         width: calc(100% - 3rem);
-        margin: 10rem 0 20rem 0;
+        margin: 10rem 0 10rem 0;
+    }
+
+    .blurb {text-align: center; width: 100%;}
+
+    .typing {
+        font-size: 2rem; 
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .blurb {
+        width: 100%;
+        font-size: 1.4rem;
+        margin-top: 2rem;
     }
 
     h1 {
@@ -203,59 +228,10 @@ p {
     }
 
     .id {
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        margin: 4rem auto 4rem auto;
-        max-width: 400px;
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0;
-        padding-bottom: 0.5rem;
-        box-shadow: 0 0 18px 0 rgba(255,255,255,0.15);
+        display: none;
     }
-
-    .id .left-col {
-        order: 2;
-        padding: 1rem;
-        align-items: center;
-        justify-content: center;
-    }
-    .id img {
-        width: 80%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 0.5rem;
-    }
-
-    .id .right-col {
-        order: 1;
-        padding: 0.8rem 1rem;
-    }
-
-    .id .right-col .myname { font-size: 1.5rem;}
-
-    .info-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-  }
-
-    .info-grid .head { font-size: 1rem; }
-    .info-grid .text { font-size: 1.15rem; }
-
-    .id p { color: var(--text-grey) !important; font-size: 1rem; }
-
-    .id-icons { gap: 1rem; }
-    .id-icons svg { width: 20px; height: 20px; }
-
-    .line { height: 6%; }
 }
 
 @media (max-width: 400px) {
-    .id {
-        width: 360px;
-        margin: 2rem auto 2rem auto;
-    }
+    
 }
