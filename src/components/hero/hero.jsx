@@ -1,7 +1,7 @@
 import './hero.css'
 import { HashLink } from "react-router-hash-link";
 import Nav from '../nav/nav.jsx'
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import pic from '../../assets/pic_4.jpg';
 
 function Hero() {
@@ -11,6 +11,14 @@ function Hero() {
     // latest rotation position
     const lastPosRef = useRef({rotateX: 0, rotateY: 0});
 
+    // Typing effect
+    const phrases = ["Software Developer", "Data Analyst", "Freelancer"];
+    const [displayText, setDisplayText] = useState('');
+    const [phraseIndex, setPhraseIndex] = useState(0);
+    const [charIndex, setCharIndex] = useState(0);
+    const [deleting, setDeleting] = useState(false);
+
+    // ID
     useEffect(() => {
         const element = cardRef.current;
         if (!element) return;
@@ -70,6 +78,46 @@ function Hero() {
         };
     }, []);
 
+    // Typing Effect
+    useEffect(() => {
+        let timeoutId;
+        const currentPhrase = phrases[phraseIndex % phrases.length];
+
+        // Typing speed (ms)
+        const TYPING_SPEED = 80;
+        const DELETING_SPEED = 40;
+        const PAUSE_AFTER_FULL = 1200;
+        const PAUSE_BEFORE_TYPING = 300;
+
+        if (!deleting && charIndex < currentPhrase.length) {
+            // Type new character
+            timeoutId = setTimeout(() => {
+                setDisplayText(currentPhrase.slice(0, charIndex + 1));
+                setCharIndex((i) => i + 1);
+            }, TYPING_SPEED);
+        } else if (!deleting && charIndex == currentPhrase.length) {
+            // finish typing - pause - start delete
+            timeoutId = setTimeout(() => {
+                setDeleting(true);
+            }, PAUSE_AFTER_FULL);
+        } else if (deleting && charIndex > 0) {
+            // delete character
+            timeoutId = setTimeout(() => {
+                setDisplayText(currentPhrase.slice(0, charIndex - 1));
+                setCharIndex((i) => i - 1);
+            }, DELETING_SPEED);
+        } else if (deleting && charIndex === 0) {
+            // stop delete - start new phrase
+            timeoutId = setTimeout(() => {
+                setDeleting(false);
+                setPhraseIndex((p) => (p + 1) % phrases.length);
+                setCharIndex(0);
+            }, PAUSE_BEFORE_TYPING);
+        }
+
+        return () => clearTimeout(timeoutId);
+    }, [phrases, phraseIndex, charIndex, deleting])
+
 
     return (
         <>
@@ -78,8 +126,14 @@ function Hero() {
                 <br /> <br />
                 <div className="content">
                     <h1>Hi, I'm Stacey-Lee</h1>
-                    <p>Software Developer</p>
-                    {/* <p>akhsjfh</p> */}
+                    <p className='typing' aria-live='polite'>
+                        <span className='typed'>{displayText}</span>
+                        <span className="cursor" aria-hidden='true'>|</span>
+                    </p>
+                    <p className='blurb'>Passionate about continuous learning and building software that balances functionality, design, and performance.</p>
+                    <div className="cta">
+                        <HashLink to="#projects" smooth className='vmw'>View My Work</HashLink>
+                    </div>
                 </div>
                 <div className="id" ref={cardRef}>
                     <div className="left-col">

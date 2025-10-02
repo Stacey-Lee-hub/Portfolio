@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-function FadeInSection({children, className="", threshold = 0.2, once=true}) {
+function FadeInSection({children, className="", id, threshold = 0.2, once=true}) {
     const ref = useRef(null);
     const [visible, setVisible] = useState(false);
 
@@ -25,7 +25,7 @@ function FadeInSection({children, className="", threshold = 0.2, once=true}) {
     }, [threshold, once ])
 
     return(
-        <div ref={ref} className={`${className} ${visible ? "visible" : ""}`.trim()} >
+        <div ref={ref} id={id} className={`${className} ${visible ? "visible" : ""}`.trim()} >
             {children}
         </div>
     );

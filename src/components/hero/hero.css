@@ -51,6 +51,26 @@ p {
     margin: 5% 0 0 10%;
 }
 
+.typing {
+    font-size: 3rem;
+    display: inline-flex;
+}
+
+.typed {white-space: nowrap;}
+
+.cursor {
+    display: inline-block;
+    margin-left: 0.6rem;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+.blurb {
+    font-weight: 200;
+    color: var(--white);
+    font-family: var(--body);
+    width: 60rem;
+}
+
 /* ID */
 .id {
     position: absolute;
@@ -130,6 +150,10 @@ p {
 @keyframes star-rise-back {
     from {background-position: 0 100%; opacity: 0.6; transform: translateZ(0);}
     to {background-position: 0 0%; opacity: 0.1; transform: translateZ(0);}
+}
+
+@keyframes blink {
+    to {visibility: hidden;}
 }
 
 /* RESPONSIVENESS */
