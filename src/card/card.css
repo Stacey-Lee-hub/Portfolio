@@ -43,3 +43,9 @@
     align-items: center;
     justify-content: center;
 }
+
+/* RESPONSIVENESS */
+/* @media (max-width: 600px) {
+    .card-cont{width: 5rem; height: 5rem;}
+    .circle {width: 4rem; height: 4rem;}
+} */

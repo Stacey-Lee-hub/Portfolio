@@ -48,6 +48,7 @@ p {
 
 .content {
     margin: 5% 0 0 10%;
+    /* animation: slide 1s ease-out forwards; */
 }
 
 .typing {
@@ -172,6 +173,17 @@ p {
 @keyframes star-rise-back {
     from {background-position: 0 100%; opacity: 0.6; transform: translateZ(0);}
     to {background-position: 0 0%; opacity: 0.1; transform: translateZ(0);}
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @keyframes blink {
